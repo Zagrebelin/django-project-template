@@ -1,0 +1,9 @@
+DJANGO_SETTINGS_MODULE=app.settings.development
+DJANGO_SETTIGNS_KEY={{ secret_key }}
+
+DJANGO_DB_ENGINE=django.db.backends.sqlite3
+DJANGO_DB_NAME={{ project_name }}.db
+DJANGO_DB_USER=
+DJANGO_DB_PASSWORD=
+DJANGO_DB_HOST=
+DJANGO_DB_PORT=
