@@ -7,7 +7,7 @@ if __name__ == "__main__":
     if os.path.isfile('environment.txt'):
         envs = open('environment.txt').readlines()
         envs = (e.strip() for e in envs)
-        envs = (e.split('=', 1) for e in envs)
+        envs = (e.split('=', 1) for e in envs if e)
         for name, value in envs:
             os.environ.setdefault(name, value)
 
